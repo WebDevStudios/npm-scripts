@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./node_modules/.bin/wp-scripts packages-update

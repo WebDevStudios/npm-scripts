@@ -1,0 +1,23 @@
+{
+  "name": "@webdevstudios/npm-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WebDevStudips",
+  "license": "GPLv3",
+  "dependencies": {
+    "@wordpress/scripts": "~12.3.0"
+  },
+  "bin": {
+    "wds-build": "bin/build",
+    "wds-format-js": "bin/format-js",
+    "wds-format-styles": "bin/format-styles",
+    "wds-lint-js": "bin/lint-js",
+    "wds-lint-style": "bin/lint-style",
+    "wds-packages-update": "bin/packages-update",
+    "wds-start": "bin/start"
+  }
+}
