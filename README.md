@@ -6,13 +6,13 @@ This package, when installed, exposes `wds-*` scripts that can be run from your 
 
 Most of the commands simply run their `@wordpress/scripts` variant, e.g.:
 
-```
+```bash
 wds-build
 ```
 
 Runs:
 
-```
+```bash
 wp-scripts build
 ```
 
@@ -22,6 +22,11 @@ The reason we do this is by having this layer in between your `package.json` and
 
 For instance, for `wds-lint-js` we don't use `@wordpress/scripts`'s prettier command, and instead do `eslint --fix` because that's what WebDevStudio's does.
 
+## Install
+
+```bash
+npm install @webdevstudios/npm-scripts --save-dev
+```
 ## Example
 
 ```json
