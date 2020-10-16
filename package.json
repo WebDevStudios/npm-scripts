@@ -9,7 +9,18 @@
   "author": "WebDevStudips",
   "license": "GPLv3",
   "dependencies": {
-    "@wordpress/scripts": "~12.3.0"
+    "@webdevstudios/js-coding-standards": "~1.3.0",
+    "@wordpress/scripts": "~12.3.0",
+    "copy-webpack-plugin": "~6.2.1",
+    "cssnano": "~4.1.10",
+    "eslint": "~7.11.0",
+    "husky": "~4.3.0",
+    "imagemin-webpack-plugin": "~2.4.2",
+    "lint-staged": "~10.4.1",
+    "npm-run-all": "~4.1.5",
+    "stylelint": "~13.7.2",
+    "stylelint-config-wordpress": "~17.0.0",
+    "svgstore-cli": "~2.0.0"
   },
   "bin": {
     "wds-build": "bin/build",
