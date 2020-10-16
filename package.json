@@ -19,5 +19,19 @@
     "wds-lint-style": "bin/lint-style",
     "wds-packages-update": "bin/packages-update",
     "wds-start": "bin/start"
+  },
+  "contributors": [
+    {
+      "name": "Aubrey Portwood",
+      "email": "code@aubreypwd.com",
+      "url": "http://aubreypwd.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/WebDevStudios/npm-scripts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WebDevStudios/npm-scripts.git"
   }
 }
