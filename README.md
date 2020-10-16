@@ -39,3 +39,7 @@ npm install @webdevstudios/npm-scripts --save-dev
     "start": "wds-start"
 }
 ```
+
+## Changelog 
+
+[See Releases on Github](https://github.com/WebDevStudios/npm-scripts/releases)
