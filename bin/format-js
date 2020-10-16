@@ -11,7 +11,7 @@
  ##
 
 if [[ ! -f "./node_modules/.bin/eslint" ]]; then
-	echo "No eslint installed"
+	echo "No eslint installed."
 	exit 1
 fi
 
