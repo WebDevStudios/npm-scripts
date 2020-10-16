@@ -1,3 +1,17 @@
 #!/bin/sh
 
+###
+ # Start
+ #
+ # Runs wp-scripts start.
+ #
+ # @since 1.0.0
+ # @author Aubrey Portwood <aubrey@webdevstudios.com>
+ ##
+
+if [[ -f "./node_modules/.bin/wp-scripts" ]]; then
+	echo "Cannot find @wordpress/scripts, is it installed?"
+	exit 1
+fi
+
 ./node_modules/.bin/wp-scripts start

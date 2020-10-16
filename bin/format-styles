@@ -1,3 +1,17 @@
 #!/bin/sh
 
+###
+ # Format Styles
+ #
+ # Here we use stylelint to format css and scss.
+ #
+ # @since 1.0.0
+ # @author Aubrey Portwood <aubrey@webdevstudios.com>
+ ##
+
+if [[ ! -f "./node_modules/.bin/stylelint" ]]; then
+	echo "Stylelint is not installed."
+	exit 1
+fi
+
 ./node_modules/.bin/stylelint --fix **/*.{css,scss}

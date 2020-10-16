@@ -1,3 +1,22 @@
 #!/bin/sh
 
-./node_modules/.bin/eslint --fix .
+###
+ # Format JavaScript
+ #
+ # Here, we do not use `@wordpress/scripts` lint-js, and instead use our
+ # own to avoid Prettier.
+ #
+ # @since 1.0.0
+ # @author Aubrey Portwood <aubrey@webdevstudios.com>
+ ##
+
+if [[ ! -f "./node_modules/.bin/eslint" ]]; then
+	echo "No eslint installed"
+	exit 1
+fi
+
+if [[ ! -f ".node_modules/@webdevstudios/js-coding-standards" ]]; then
+	./node_modules/.bin/eslint --fix . # You already have this configured.
+else
+	./node_modules/.bin/eslint --fix "**/*.{js,jsx,ts,tsx}"
+fi
