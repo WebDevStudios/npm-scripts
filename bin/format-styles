@@ -9,8 +9,8 @@
  # @author Aubrey Portwood <aubrey@webdevstudios.com>
  ##
 
-if [[ ! -f "./node_modules/.bin/stylelint" ]]; then
-	echo "Stylelint is not installed."
+if [ ! -f "./node_modules/.bin/stylelint" ]; then
+	echo "Cannot find stylelint, is it installed?"
 	exit 1
 fi
 
