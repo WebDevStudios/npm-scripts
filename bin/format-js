@@ -10,12 +10,12 @@
  # @author Aubrey Portwood <aubrey@webdevstudios.com>
  ##
 
-if [[ ! -f "./node_modules/.bin/eslint" ]]; then
-	echo "No eslint installed."
+if [ ! -f "./node_modules/.bin/eslint" ]; then
+	echo "Cannot find eslint, is it installed?"
 	exit 1
 fi
 
-if [[ ! -f ".node_modules/@webdevstudios/js-coding-standards" ]]; then
+if [ ! -f ".node_modules/@webdevstudios/js-coding-standards" ]; then
 	./node_modules/.bin/eslint --fix . # You already have this configured.
 else
 	./node_modules/.bin/eslint --fix "**/*.{js,jsx,ts,tsx}"
