@@ -43,3 +43,12 @@ npm install @webdevstudios/npm-scripts --save-dev
 ## Changelog 
 
 [See Releases on Github](https://github.com/WebDevStudios/npm-scripts/releases)
+
+## Release Process
+
+1. On `master`, run `npm version PATCH|MINOR|MAJOR` to bump version
+2. `git push --tags`
+2. `npm run pack`
+3. Create [Release](https://github.com/WebDevStudios/npm-scripts/releases) on Github
+4. Attach `webdevstudios-npm-scripts-{version}.tgz` to release
+5. `npm publish`
